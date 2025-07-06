@@ -125,51 +125,6 @@ v₅ = v₀ × P⁵
 
 ---
 
-## 💻 Python Code
-
-<details>
-<summary>Click to view code</summary>
-
-```python
-import numpy as np
-
-def get_population_vector():
-    print("Enter initial population sizes:")
-    children = float(input("Children: "))
-    adults = float(input("Adults: "))
-    elderly = float(input("Elderly: "))
-    return np.array([children, adults, elderly])
-
-def get_transition_matrix():
-    print("Enter transition matrix (as percentages, 0-100):")
-    matrix = np.zeros((3, 3))
-    for j in range(3):
-        for i in range(3):
-            matrix[i, j] = float(input(f"From group {j} to group {i}: ")) / 100
-    return matrix
-
-def simulate_population(initial_pop, trans_matrix, steps):
-    pop = initial_pop.copy()
-    for t in range(steps):
-        pop = np.dot(trans_matrix, pop)
-        print(f"Year {t+1}: {pop}")
-    return pop
-
-def main():
-    print("Markov Chain Population Model")
-    pop_vector = get_population_vector()
-    trans_matrix = get_transition_matrix()
-    steps = int(input("Years to simulate: "))
-    simulate_population(pop_vector, trans_matrix, steps)
-
-if __name__ == "__main__":
-    main()
-```
-
-</details>
-
----
-
 ## 📎 References
 
 * [Fewster, R. Chapter 8: Markov chains](https://www.stat.auckland.ac.nz/~fewster/325/notes/ch8.pdf) - University of Auckland
