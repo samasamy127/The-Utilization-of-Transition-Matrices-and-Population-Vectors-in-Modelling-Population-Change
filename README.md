@@ -1,7 +1,3 @@
-GitHub's README files support Markdown, not LaTeX. However, you can convert your LaTeX content to Markdown using GitHub-supported syntax, Unicode for math symbols, and fenced code blocks for Python. Here's how to structure the README-friendly version:
-
----
-
 ## 📘 **The Utilization of Transition Matrices and Population Vectors in Modelling Population Change**
 
 **Course**: Math 201, Spring 2025
