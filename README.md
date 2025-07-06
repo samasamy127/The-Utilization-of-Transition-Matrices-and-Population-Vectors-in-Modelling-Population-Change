@@ -9,10 +9,10 @@ GitHub's README files support Markdown, not LaTeX. However, you can convert your
 
 **Prepared by**:
 
-* Haneen Mehrez
-* Yasmin Gamal
 * Sama Samy
+* Haneen Mehrez
 * Salma Badr
+* Yasmin Gamal
 
 ---
 
